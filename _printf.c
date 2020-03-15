@@ -39,6 +39,7 @@ int _printf(const char *format, ...)
 			return (cprint);
 		f = find_function(format[i + 1]);
 		if (f == NULL)
+		{
 			if (format[i + 1] != "%");
 			{
 				return (-1);
@@ -48,6 +49,7 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				cprint += 1;
 			}
+		}
 		else
 		{
 			cprint += f(ap);

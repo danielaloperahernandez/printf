@@ -14,6 +14,7 @@ int main(void)
 	int alen;
 	int elen;
 	char c = 'z';
+	char *str = NULL;
 	/*char *str = NULL;*/
 	/*unsigned int ui;*/
    	/*void *addr;*/
@@ -55,12 +56,12 @@ int main(void)
 	_printf("Actual     : %s\n", "holberton");
 	printf("Expected   : %s$\n", "");
 	_printf("Actual     : %s$\n", "");
-	/*elen = printf("Expected   : %s\n", str);*/
-	/*alen = _printf("Actual     : %s\n", str);*/
-	/*elen = printf("%s", "");*/
-	/*alen = _printf("%s", "");*/
-	/*printf("Expected   : %i\n", elen);*/
-	/*printf("Actual     : %i\n", alen);*/
+	elen = printf("Expected   : %s\n", str);
+	alen = _printf("Actual     : %s\n", str);
+	elen = printf("%s\n", "1");
+	alen = _printf("%s\n", "1");
+	printf("Expected   : %i\n", elen);
+	printf("Actual     : %i\n", alen);
 	printf("Expected   : %sschool\n", "holberton");
 	_printf("Actual     : %sschool\n", "holberton");
 	/*elen = printf("Expected: %c%%%c%%%%%s%c%s%s\n", INT_MAX, INT_MIN, "hello", 0, "holberton", 0);*/

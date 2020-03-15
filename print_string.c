@@ -15,7 +15,7 @@ int print_string(va_list s)
         my_string = va_arg(s, char *);
         while (my_string[i])
         {
-                _putchar(my_string);
+                _putchar(my_string[i]);
                 i++;
         }
         return (i);

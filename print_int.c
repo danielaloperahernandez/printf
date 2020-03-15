@@ -31,11 +31,15 @@ int print_int(va_list i)
 		{
 			digit = n / powten;
 			if (n < 0)
+			{
 				_putchar((digit * -1) + 48);
 				count++;
+			}
 			else
+			{
 				_putchar(digit + '0');
 				count++;
+			}
 			n -= digit * powten;
 			powten /= 10;
 		}

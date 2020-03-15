@@ -41,17 +41,21 @@ int _printf(const char *format, ...)
 			return (cprint);
 		if (!format[i + 1])
 			return (-1);
-		f = find_function(format[i + 1]);
+		f = find_function(&format[i + 1]);
 		if (f != NULL)
 		{
 			cprint += f(ap);
 			i += 2;
 		}
 		if (format[i + 1] == '%')
+		{
 			_putchar('%');
 			i += 2;
-		else 
+		}
+		else
+		{
 			i++;
+		}
 	}
 	va_end(ap);
 	return (cprint);

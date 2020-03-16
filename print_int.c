@@ -14,6 +14,7 @@ int print_int(va_list i)
 	{
 		if (n < 0)
 			_putchar('-');
+			count++;
 		num = n;
 		len = 0;
 		while (num != 0)

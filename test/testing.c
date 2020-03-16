@@ -70,7 +70,9 @@ int main(void)
 	_printf("Actual  : %d\n", alen);
 	printf("Expected   :%%%d\n", len);
 	_printf("Actual : %%%d\n", len);
-        /*printf("Unknown:[%r]\n", len);*/
-        _printf("Unknown:[%r]\n", len2);
+	_printf("Len:[%d]\n", len);
+    	printf("Len:[%d]\n", len2);
+        /*printf("Unknown:[%d]\n");*/
+        _printf("Unknown:[%d]\n");
 	return (0);
 }

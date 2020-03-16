@@ -53,12 +53,19 @@ int _printf(const char *format, ...)
 			return (cprint);
 		f = find_function(&format[i + 1]);
 		if (f != NULL)
+		{
 			cprint += f(ap);
+			i += 2;
+			continue;
+		}
 		if (!format[i + 1])
 			return (-1);
+		_putchar(format[i]);
+		cprint++;
 		if (format[i + 1] == '%')
-			_putchar('%');
-		i += 2;
+			i += 2;
+		else
+			i++;
 	}
 	va_end(ap);
 	return (cprint);

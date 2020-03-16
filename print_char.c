@@ -9,7 +9,7 @@
  */
 int print_char(va_list c)
 {
-	char my_char;
+	unsigned char my_char;
 
 	my_char = va_arg(c, int);
 	_putchar(my_char);

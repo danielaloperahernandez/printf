@@ -21,10 +21,10 @@ int (*find_function(const char *format))(va_list)
 	while (find_f[i].sc)
 	{
 		if (find_f[i].sc[0] == (*format))
-			break;
+			return (find_f[i].f);
 		i++;
 	}
-	return (find_f[i].f);
+	return (NULL);
 }
 /**
   * _printf - function that produces output according to a format.
@@ -50,11 +50,11 @@ int _printf(const char *format, ...)
 		}
 		if (format[i] == '\0')
 			return (cprint);
-		if (!format[i + 1])
-			return (-1);
 		f = find_function(&format[i + 1]);
 		if (f != NULL)
 			cprint += f(ap);
+		if (!format[i + 1])
+			return (-1);
 		if (format[i + 1] == '%')
 			_putchar('%');
 		i += 2;

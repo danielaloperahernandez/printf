@@ -20,7 +20,5 @@ int print_string(va_list s)
 		_putchar(my_string[i]);
 		i++;
 	}
-	if (my_string == NULL)
-		return (-1);
 	return (i);
 }

@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
-* print_number - function that prints an integer
-* @n: integer to print
+* print_dec - function that prints an decimal
+* @d: integer to print
 * Descriptions: prints digit with _putchar
+* Return: size the output text
 */
 int print_dec(va_list d)
 {
@@ -12,9 +13,7 @@ int print_dec(va_list d)
 	if (n != 0)
 	{
 		if (n < 0)
-		{
 			_putchar('-');
-		}
 		num = n;
 		len = 0;
 		while (num != 0)
@@ -24,9 +23,7 @@ int print_dec(va_list d)
 		}
 		powten = 1;
 		for (j = 1; j <= len - 1; j++)
-		{
 			powten *= 10;
-		}
 		for (j = 1; j <= len; j++)
 		{
 			digit = n / powten;

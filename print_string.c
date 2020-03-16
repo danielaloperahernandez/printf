@@ -9,18 +9,18 @@
  */
 int print_string(va_list s)
 {
-        char *my_string;
-        int  i = 0;
+	char *my_string;
+	int  i = 0;
 
-        my_string = va_arg(s, char *);
-        if (my_string == NULL)
-        {
-                my_string = "(nil)";
-        }
-        while (my_string[i])
-        {
-                _putchar(my_string[i]);
-                i++;
-        }
-        return (i);
+	my_string = va_arg(s, char *);
+	if (my_string == NULL)
+	{
+		my_string = "(nil)";
+	}
+	while (my_string[i])
+	{
+		_putchar(my_string[i]);
+		i++;
+	}
+	return (i);
 }

@@ -14,7 +14,7 @@ int main(void)
 	int alen;
 	int elen;
 	char c = 'z';
-	char *str = NULL;
+	char *str = "sometimes    by";
 	/*char *str = NULL;*/
 	/*unsigned int ui;*/
    	/*void *addr;*/
@@ -75,7 +75,9 @@ int main(void)
         /*printf("Unknown:[%d]\n");*/
         _printf("Unknown:[%r]\n", "strings");
 	_printf("Unknown:[%r]\n");
-	_printf("word %b\n", 0);
+	_printf("word %b\n", 10);
+	len =_printf("word %R\n", str);
+	_printf("%d\n", len);
 	/*printf("Expected %b\n", 98);*/
 	return (0);
 }

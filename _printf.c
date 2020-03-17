@@ -21,6 +21,7 @@ int (*find_function(const char *format))(va_list)
 		{"o", print_octal},
 		{"x", print_x},
 		{"X", print_X},
+		{"R", print_rot13},
 		{NULL, NULL}
 	};
 

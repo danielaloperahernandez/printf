@@ -30,6 +30,21 @@ The int argument is converted to an unsigned char, and the resulting character i
 .TP
 .B s 
 The const char * argument is expected to be a pointer to an array of character type (pointer to a string). Characters from the array are written up (but not including) a terminating null byte ('\0').
+.TP
+.B x, X
+The unsigned int argument in converted to unsigned lowercase hexadecimal notation(x), or unsigned uppercase hexadecimal notation(X).
+.TP
+.B u
+The unsigned int argument is converted to unsigned decimal notation.
+.TP
+.B o, b
+The unsigned int argument is converted to unsigned octal notation(o) or binary notation(b).
+.TP
+.B r
+Prints a string in reverse
+.TP
+.B R
+Prints a string converted to rot13
 .TP 
 .B % 
 A '%' is written but no argument is converted. The complete version specification is '%%'

@@ -68,7 +68,12 @@ int main(void)
 	/*alen = _printf("Actual  : %c%%%c%%%%%s%c%s%s\n", INT_MAX, INT_MIN, "hello", 0, "holberton",0);*/
 	printf("Expected: %d\n", elen);
 	_printf("Actual  : %d\n", alen);
-	/*printf("Expected   :%%%");*/
-	_printf("Actual : %%%");
+	printf("Expected   :%%%d\n", len);
+	_printf("Actual : %%%d\n", len);
+	_printf("Len:[%d]\n", len);
+    	printf("Len:[%d]\n", len2);
+        /*printf("Unknown:[%d]\n");*/
+        _printf("Unknown:[%r]\n", "strings");
+	_printf("Unknown:[%r]\n");
 	return (0);
 }

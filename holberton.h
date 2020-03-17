@@ -13,6 +13,7 @@ int print_unsig(va_list u);
 int print_octal(va_list o);
 int print_x(va_list x);
 int print_X(va_list X);
+int print_bin(va_list b);
 /**
   * struct code_format - Struct format
   *

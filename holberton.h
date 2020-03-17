@@ -9,6 +9,7 @@ int print_string(va_list s);
 int print_int(va_list i);
 int print_dec(va_list d);
 int print_rev(va_list r);
+int print_bin(va_list b);
 /**
   * struct code_format - Struct format
   *

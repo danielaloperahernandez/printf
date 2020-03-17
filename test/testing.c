@@ -75,7 +75,7 @@ int main(void)
         /*printf("Unknown:[%d]\n");*/
         _printf("Unknown:[%r]\n", "strings");
 	_printf("Unknown:[%r]\n");
-	_printf("word %b\n", 98);
+	_printf("word %b\n", 0);
 	/*printf("Expected %b\n", 98);*/
 	return (0);
 }
